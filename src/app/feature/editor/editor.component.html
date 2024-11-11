@@ -1,0 +1,14 @@
+<app-toolbar />
+
+<form [formGroup]="formGroup" class="editable-container">
+  <div formArrayName="blocks">
+    @for (control of blocksFromArray.controls; track i; let i = $index) {
+      <app-editor-block
+        [blockGroupForm]="$any(control)"
+        [index]="i"
+      />
+    }
+  </div>
+</form>
+
+<!--<div class="xxx" (click)="addBlock(blocksFromArray.length + 1)"></div>-->

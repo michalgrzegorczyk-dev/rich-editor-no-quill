@@ -1,0 +1,14 @@
+.toolbar-wrapper {
+  position: fixed;
+  z-index: 1000;
+  transform: translate(0%, -100%);
+}
+
+.tooltip {
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  margin-bottom: 8px;
+}
+
